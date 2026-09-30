@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background: #efefef;
+        font-family: "Segoe UI", sans-serif;
+    }
+
+    table {
+        width: 100%;
+        max-width: 500px;
+        margin: auto;
+    }
+
+    .pequenio {
+        width: 60px;
+    }
+
+    .mediano {
+        width: 200px;
+    }
+
+    .grande {
+        width: 100%;
+    }
+
+    textarea {
+        resize: none;
+    }
+</style>
+
+<body>
+    <header>
+        <h1>Formulario HTML</h1>
+
+    </header>
+
+    <article>
+        <h2>Formulario de busqueda</h2>
+
+        <form action="http://google.es/search" method="get">
+
+            <input type="text" name="q">
+            <input type="hidden" name="udm" value="2">
+            <input type="submit" value="Buscar">
+            <input type="image" src="search.png" alt="lupa">
+
+        </form>
+
+        <hr />
+
+        <h2>Tipos de inputs y propiedades</h2>
+
+        <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
+
+            <table>
+                <tr>
+                    <td>Apellido</td>
+                    <td><input type="text" name="apellido" size="50" class="grande"></td>
+                </tr>
+                <tr>
+                    <td>Codigo Postal</td>
+                    <td><input type="text" name="cp" maxlength="5" min="5" size="5" class="pequenio"></td>
+                </tr>
+                <tr>
+                    <td>Telefono</td>
+                    <td><input type="text" name="Telefono" placeholder="+34 123 45 67 89" class="mediano"></td>
+                </tr>
+                <tr>
+                    <td>Ciudad</td>
+                    <td><input type="text" name="Ciudad" value="Madrid" class="mediano"></td>
+                </tr>
+                <tr>
+                    <td>Contraseña</td>
+                    <td><input type="password" name="Clave" class="pequenio" id="clave">
+                        <input type="button" value="ver" onmousedown="document.getElementById('clave').type='text'
+                               " onmouseup="document.getElementById('clave').type='password'">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td><input type="email" name="email" placeholder="direccion@email.com" class="mediano"></td>
+                </tr>
+                <tr>
+                    <td>Comentarios</td>
+                    <td>
+                        <textarea name="comentario" class="grande" rows="5"></textarea>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Edad</td>
+                    <td><input type="number" name="edad" class="pequenio" value="25" min="18" max="65"></td>
+                </tr>
+                <tr>
+                    <td>Latas</td>
+                    <td><input type="number" name="latas" min="6" value="12" step="6" class="pequenio"></td>
+                </tr>
+                <tr>
+                    <td>Ingredientes</td>
+                    <td>
+                        <label><input type="checkbox" name="tomate" value="si">Tomate </label><br>
+                        <label><input type="checkbox" name="alcaparra" value="si">Alcaparra </label><br>
+                        <label><input type="checkbox" name="anchoas" value="si">Anchoas </label><br>
+                        <label><input type="checkbox" name="queso" value="si">Extra queso </label>
+
+
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Horario</td>
+                    <td>
+                        <label><input type="radio" name="horario" value="maniana">Mañana</label><br>
+                        <label><input type="radio" name="horario" value="tarde">Tarde</label><br>
+                        <label><input type="radio" name="horario" value="noche">Noche</label><br>
+                        <label><input type="radio" name="horario" value="Indiferente" checked>Indiferente</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Habitacion</td>
+                    <td>
+                        <select name="habitacion">
+                            <option value="i1">Individual</option>
+                            <option value="d2">Doble 2 camas</option>
+                            <option value="d1">Doble matrimonio</option>
+                            <option value="t3">Triple 3 camas</option>
+                            <option value="t2">Tripe matrimonio+individual</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Provincias</td>
+                    <td><select name="provincia" id="provincia">
+                            <option value="15">A Coruña</option>
+                            <option value="01">Álava</option>
+                            <option value="02">Albacete</option>
+                            <option value="03">Alicante</option>
+                            <option value="04">Almería</option>
+                            <option value="33">Asturias</option>
+                            <option value="05">Ávila</option>
+                            <option value="06">Badajoz</option>
+                            <option value="07">Baleares</option>
+                            <option value="08">Barcelona</option>
+                            <option value="09">Burgos</option>
+                            <option value="10">Cáceres</option>
+                            <option value="11">Cádiz</option>
+                            <option value="39">Cantabria</option>
+                            <option value="12">Castellón</option>
+                            <option value="51">Ceuta</option>
+                            <option value="13">Ciudad Real</option>
+                            <option value="14">Córdoba</option>
+                            <option value="16">Cuenca</option>
+                            <option value="17">Girona</option>
+                            <option value="18">Granada</option>
+                            <option value="19">Guadalajara</option>
+                            <option value="20">Gipuzkoa</option>
+                            <option value="21">Huelva</option>
+                            <option value="22">Huesca</option>
+                            <option value="23">Jaén</option>
+                            <option value="24">León</option>
+                            <option value="25">Lleida</option>
+                            <option value="27">Lugo</option>
+                            <option value="28">Madrid</option>
+                            <option value="29">Málaga</option>
+                            <option value="52">Melilla</option>
+                            <option value="30">Murcia</option>
+                            <option value="31">Navarra</option>
+                            <option value="32">Ourense</option>
+                            <option value="34">Palencia</option>
+                            <option value="35">Las Palmas</option>
+                            <option value="36">Pontevedra</option>
+                            <option value="26">La Rioja</option>
+                            <option value="37">Salamanca</option>
+                            <option value="38">Santa Cruz de Tenerife</option>
+                            <option value="40">Segovia</option>
+                            <option value="41">Sevilla</option>
+                            <option value="42">Soria</option>
+                            <option value="43">Tarragona</option>
+                            <option value="44">Teruel</option>
+                            <option value="45">Toledo</option>
+                            <option value="46">Valencia</option>
+                            <option value="47">Valladolid</option>
+                            <option value="48">Bizkaia</option>
+                            <option value="49">Zamora</option>
+                            <option value="50">Zaragoza</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td>Foto</td>
+                    <td>
+                        <input type="text" name="" id="">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Comprobar"></td>
+                </tr>
+            </table>
+
+
+            <br>
+
+
+
+
+        </form>
+    </article>
+</body>
+
+</html>

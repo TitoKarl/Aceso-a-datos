@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elementos del HTML</title>
+    <style>
+      table#primera {
+        background: lavender;
+        border-collapse: collapse;
+        font:
+          1.1rem "Segoe UI",
+          sans-serif;
+      }
+      #primera td {
+        border-bottom: 3px solid white;
+        padding: 5px 20px;
+      }
+      #primera td:nth-child(2) { /* 2ª columna */
+        text-align: center;
+      }
+      #primera tr:nth-child(1) td { /* 1ª fila */
+        background: #333;
+        color: #ccc;
+        font-weight: bold;
+      }
+      #primera tr:nth-child(even) td {  /* Filas pares */
+        background: #ddd;
+      }
+      table#segunda {
+        background: solid black;
+        font: 1.1rem "Seoge UI", "sans-serif";
+        border-collapse: collapse;
+      }
+      #segunda td {
+        border-bottom: 3px solid white;
+        padding: 5px 20px;
+      }
+      #segunda td:nth-child(2) {
+        text-align: center;
+      }
+      #segunda td:nth-child(3) {
+        text-align: right;
+      }
+      #segunda tr:nth-child(odd) td {
+        text-align: #ddd;
+      }
+      #segunda tr:nth-child(even) td {
+        text-align: #eee;
+      }
+      #segunda tr:nth-child(1) td {
+        background: white;
+        color: navy;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Elementos de HTML</h1>
+
+    <table id="primera">
+      <tr>
+        <td>Nombre</td>
+        <td>Teléfono</td>
+        <td>Ciudad</td>
+      </tr>
+      <tr>
+        <td>Paco</td>
+        <td>456 789 321</td>
+        <td>Toledo</td>
+      </tr>
+      <tr>
+        <td>Ángel</td>
+        <td>621 45 89 63</td>
+        <td>Cádiz</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>789632145</td>
+        <td>Getafe</td>
+      </tr>
+      <tr>
+        <td>María Jesús</td>
+        <td>652387416</td>
+        <td>Avila</td>
+      </tr>
+    </table>
+    
+    <br><br>
+    
+    <table id="segunda">
+    <tr>
+       <td>Nombre</td>
+       <td>Color</td>
+       <td>Pvp</td>
+    </tr>
+    <tr>
+      <td>Manzana</td>
+      <td>Rojo</td>
+      <td>1.50 €</td>
+    </tr>
+    <tr>
+      <td>Plátano</td>
+      <td>Amarillo</td>
+      <td>11.20 €</td>
+    </tr>
+    <tr>
+      <td>Kiwi</td>
+      <td>Verde</td>
+      <td>2.80 €</td>
+    </tr>
+    <tr>
+      <td>Naranja</td>
+      <td>Naranja</td>
+      <td>0.90 €</td>
+    </tr>
+    <tr>
+      <td>Arándano</td>
+      <td>Azul</td>
+      <td>3.50 €</td>
+    </tr>
+    </table>
+    
+    
+    
+    
+    
+    
+    
+    
+  </body>
+</html>

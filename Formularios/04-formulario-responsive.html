@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+        background: #efefef;
+        font-family: "Segoe UI", sans-serif;
+    }
+    input, textarea, select, option {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 1rem;
+        padding: 3px, 8px;
+    }
+    form {
+        width: 100%;
+        max-width: 400px;
+        margin: auto;
+        background: #f5f5f5;
+        padding: 30px;
+        border: #eee solid 1px;
+    }
+    input, textarea {
+        width: 100%;
+    }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Formulario Responsive</h1>
+
+        <article>
+            <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
+                Nombre
+                <input type="text" name="nombre">
+                Email
+                <input type="email" name="email">
+                Telefono
+                <input type="text" name="telefono">
+                Tipo de habitacion
+                <select name="habitacion">
+                    <option value="i1">Individual</option>
+                    <option value="d2">Doble 2 camas</option>
+                    <option value="d1">Doble matrimonio</option>
+                    <option value="t3">Triple 3 camas</option>
+                    <option value="t2">Tripe matrimonio+individual</option>
+                </select>
+                Comentario
+                <textarea name="comentario" rows="5"></textarea>
+                <input type="submit">
+
+
+
+            </form>
+        </article>
+    </header>
+</body>
+</html>

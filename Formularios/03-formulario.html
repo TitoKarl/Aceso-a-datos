@@ -20,6 +20,7 @@
         width: 100%;
         max-width: 500px;
         margin: auto;
+        border-spacing: 8px ;
     }
 
     .pequenio {
@@ -37,6 +38,33 @@
     textarea {
         resize: none;
     }
+    input, textarea, select, option {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 1rem;
+        padding: 3px, 8px;
+    }
+    input, textarea{
+        border: 1px solid grey;
+        border-radius: 4px;
+        background: #f5f5f5;
+    }
+    input[type='file'] {
+        border: none;
+    }
+    input[type='submit'] {
+        border: none;
+        background-color: forestgreen;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 6px 15px;
+    }
+    input[type='submit']:hover{
+        background-color: #29a629;
+        box-shadow: 3px 0px 4px grey;
+    }
+    :required {border: 2px solid red}
+    :focus {background-color: lavender;}
 </style>
 
 <body>
@@ -89,7 +117,7 @@
                 </tr>
                 <tr>
                     <td>Email</td>
-                    <td><input type="email" name="email" placeholder="direccion@email.com" class="mediano"></td>
+                    <td><input type="email" name="email" placeholder="direccion@email.com" class="mediano" autocomplete="off"></td>
                 </tr>
                 <tr>
                     <td>Comentarios</td>
@@ -140,7 +168,7 @@
                 </tr>
                 <tr>
                     <td>Provincias</td>
-                    <td><select name="provincia" id="provincia">
+                    <td><select name="provincia" id="provincia" required>
                             <option value="15">A Coruña</option>
                             <option value="01">Álava</option>
                             <option value="02">Albacete</option>
@@ -198,7 +226,25 @@
                 <tr>
                     <td>Foto</td>
                     <td>
-                        <input type="text" name="" id="">
+                        <input type="file" name="foto" accept="image/*">
+                    </td>
+                </tr>
+                <tr>
+                    <td>Fecha</td>
+                    <td>
+                        <input type="date" name="2026-12-30" value="2026-12-23" min="2026-11-11" max="2027-01-11" step="7">    YYYY-MM-DD
+                    </td>
+                </tr>
+                <tr>
+                    <td>Tiempo</td>
+                    <td>
+                        <input type="time" name="tiempo" min="12:15" max="17:45" value="15:30" step="900">
+                    </td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td> <label>
+                        <input required type="checkbox" name="acepto"> Acepto los terminos y condiciones </label>
                     </td>
                 </tr>
                 <tr>

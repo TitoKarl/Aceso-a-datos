@@ -19,14 +19,48 @@
     }
     form {
         width: 100%;
-        max-width: 400px;
+        max-width: 600px;
         margin: auto;
         background: #f5f5f5;
         padding: 30px;
         border: #eee solid 1px;
     }
-    input, textarea {
+    input, textarea, select{
         width: 100%;
+        margin-bottom: 15px;
+    }
+    input[type='submit'] {
+        width: auto; 
+        border: none;
+        background-color: forestgreen;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 6px 15px;
+    }
+    input[type='submit']:hover{
+        
+        background-color: #29a629;
+        box-shadow: 0px 3px 4px grey;
+    }
+    #boton {
+        text-align: right;
+    }
+    .fila {
+        display: flex;
+        gap: 30px;
+        align-items: end;
+    }
+    .columna1 {
+        width: 60%;
+    }
+    .columna2 {
+        width: 40%;
+    }
+    
+    input[type='checkbox']{
+        width: auto;
+        
     }
     </style>
 </head>
@@ -38,21 +72,38 @@
             <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
                 Nombre
                 <input type="text" name="nombre">
-                Email
-                <input type="email" name="email">
-                Telefono
-                <input type="text" name="telefono">
-                Tipo de habitacion
-                <select name="habitacion">
+                <div class="fila">
+                    <div class="columna1">
+                        Email
+                        <input type="email" name="email">
+                    </div>
+                    <div class="columna2">
+                        Telefono
+                        <input type="text" name="telefono">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna1">
+                    Tipo de habitacion
+                    <select name="habitacion">
                     <option value="i1">Individual</option>
-                    <option value="d2">Doble 2 camas</option>
+                    <option selected value="d2">Doble 2 camas</option>
                     <option value="d1">Doble matrimonio</option>
                     <option value="t3">Triple 3 camas</option>
                     <option value="t2">Tripe matrimonio+individual</option>
                 </select>
+                </div>
+            
+                <div class="columna2">
+                <label><input type="checkbox" name="desayuno" value="si"></label>
+                Desayuno
+                </div>
+                </div>
+            
+                
                 Comentario
                 <textarea name="comentario" rows="5"></textarea>
-                <input type="submit">
+                <div id="boton"><input type="submit"></div>
 
 
 

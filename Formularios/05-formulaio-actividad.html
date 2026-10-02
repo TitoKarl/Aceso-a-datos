@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+        background: #efefef;
+        font-family: "Segoe UI", sans-serif;
+    }
+    input, textarea, select, option {
+        font-family: "Segoe UI", sans-serif;
+        font-size: 1rem;
+        padding: 3px, 8px;
+    }
+    form {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        background: #f5f5f5;
+        padding: 30px;
+        border: #eee solid 1px;
+    }
+    input, textarea, select{
+        width: 100%;
+        margin-bottom: 15px;
+    }
+    input[type='submit'] {
+        width: auto; 
+        border: none;
+        background-color: forestgreen;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 6px 15px;
+    }
+    input[type='submit']:hover{
+        
+        background-color: #29a629;
+        box-shadow: 0px 3px 4px grey;
+    }
+    input[type='radio']{
+        width: auto ;
+        margin-bottom: 0px;
+    
+    }
+    #boton {
+        text-align:center;
+    }
+    .fila {
+        display: flex;
+        gap: 30px;
+        align-items: end;
+    }
+    .columna1 {
+        width: 50%;
+    }
+    .columna2 {
+        width: 50%;
+    }
+    .columna3 {
+        width: 90%;
+    }
+    .columna4 {
+        width: 10%;
+    }
+    .columna5 {
+        width: 15%;
+    }
+    .columna6 {
+        width: 60%;
+    }
+    .columna7 {
+        width: 25%;
+    }
+    .columna8 {
+        width: 60%;
+    }
+    .columna9 {
+        width: 45%;
+    }
+    .columna10 {
+        width: 50%;
+    }
+    .columna11 {
+        width: 50%;
+    }
+    .columna12 {
+        width: 100% ;
+    }
+    
+    input[type='checkbox']{
+        width: auto;
+        text-align:center;
+        
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Actividad 1</h1>
+<article>
+            <form action="http://www.cursos-diseño.es/mostrar.php" method="post">
+                <div class="fila">
+                    <div class="columna1">
+                        Nombre
+                        <input type="text" name="nombre">
+                    </div>
+                    <div class="columna2">
+                        Apellidos
+                        <input type="text" name="Apellidos">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna3">
+                        Calle
+                        <input type="text" name="nombre">
+                    </div>
+                    <div class="columna4">
+                        N
+                        <input type="number" name="numero" min="0" max="10">
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna5">
+                        CP
+                        <input type="text" name="cp">
+                    </div>
+                    <div class="columna6">
+                        Poblacion
+                        <input type="text" name="poblacion">
+                    </div>
+                    <div class="columna7">
+                        Provincia
+                    <select name="provicincia">
+                    <option value="15">A Coruña</option>
+                            <option value="01">Álava</option>
+                            <option value="02">Albacete</option>
+                            <option value="03">Alicante</option>
+                            <option value="04">Almería</option>
+                            <option value="33">Asturias</option>
+                            <option value="05">Ávila</option>
+                            <option value="06">Badajoz</option>
+                            <option value="07">Baleares</option>
+                            <option value="08">Barcelona</option>
+                            <option value="09">Burgos</option>
+                            <option value="10">Cáceres</option>
+                            <option value="11">Cádiz</option>
+                            <option value="39">Cantabria</option>
+                            <option value="12">Castellón</option>
+                            <option value="51">Ceuta</option>
+                            <option value="13">Ciudad Real</option>
+                            <option value="14">Córdoba</option>
+                            <option value="16">Cuenca</option>
+                            <option value="17">Girona</option>
+                            <option value="18">Granada</option>
+                            <option value="19">Guadalajara</option>
+                            <option value="20">Gipuzkoa</option>
+                            <option value="21">Huelva</option>
+                            <option value="22">Huesca</option>
+                            <option value="23">Jaén</option>
+                            <option value="24">León</option>
+                            <option value="25">Lleida</option>
+                            <option value="27">Lugo</option>
+                            <option value="28">Madrid</option>
+                            <option value="29">Málaga</option>
+                            <option value="52">Melilla</option>
+                            <option value="30">Murcia</option>
+                            <option value="31">Navarra</option>
+                            <option value="32">Ourense</option>
+                            <option value="34">Palencia</option>
+                            <option value="35">Las Palmas</option>
+                            <option value="36">Pontevedra</option>
+                            <option value="26">La Rioja</option>
+                            <option value="37">Salamanca</option>
+                            <option value="38">Santa Cruz de Tenerife</option>
+                            <option value="40">Segovia</option>
+                            <option value="41">Sevilla</option>
+                            <option value="42">Soria</option>
+                            <option value="43">Tarragona</option>
+                            <option value="44">Teruel</option>
+                            <option value="45">Toledo</option>
+                            <option value="46">Valencia</option>
+                            <option value="47">Valladolid</option>
+                            <option value="48">Bizkaia</option>
+                            <option value="49">Zamora</option>
+                            <option value="50">Zaragoza</option>
+                </select>
+                    </div>
+                </div>
+                <div class="fila">
+                    <div class="columna8">
+                        Email
+                        <input type="email" name="email">
+                    </div>
+                    <div class="columna9">
+                        Telefono
+                        <input type="text" name="telefono">
+                    </div>
+                    </div>
+                <div class="fila">
+                <div class="columna10">
+                      <tr>
+                    <td>Ingles</td><br>
+                    <td>
+                        <label><input type="radio" name="ingles" value="basico">Basico</label><br>
+                        <label><input checked type="radio" name="ingles" value="medio">Medio</label><br>
+                        <label><input type="radio" name="ingles" value="avanzado">Avanzado</label><br>
+                    </td>                        
+                </div>
+                <div class="columna11">
+                <tr>
+                    <td>Disponibilidad</td><br>
+                    <td>
+                        <label><input checked type="radio" name="disp" value="mañana">Mañana</label><br>
+                        <label><input type="radio" name="disp" value="tarde">Tarde</label><br>
+                        <label><input type="radio" name="disp" value="ambas">Ambas</label><br>
+                    </td>
+                </div>
+                </div>
+                <br>
+                <div class="columna12">
+                <label><input type="checkbox" name="terminos" value="si">
+                Acepto los </label><a href="terminos.html">terminos y condiciones</a>
+                </div>
+                <div id="boton"><input type="submit"></div>
+            </form> 
+</article>  
+    </header>
+    
+</body>
+</html>

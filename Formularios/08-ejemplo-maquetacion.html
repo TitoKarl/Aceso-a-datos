@@ -5,26 +5,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prueba Maquetacion</title>
-<style>
-    * {
-        box-sizing: border-box;
-    }
-    #contenedor {
-        width: 1000px;
-        background: orange;
-        margin: auto;
-    }
-    #fila {
-        display: flex;
-        gap: 30px;
-    }
-    #izquierda {
-        width: 765px;
-    }
-    #derecha {
-        width: 205px;
-    }
-</style>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe ui',
+                sans-serif;
+        }
+
+        #contenedor {
+            width: 1000px;
+            margin: auto;
+        }
+
+        header {
+            background: lavender;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        #fila {
+            display: flex;
+            gap: 30px;
+
+        }
+
+        #izquierda {
+            width: 765px;
+            padding: 30px;
+            background: lavender;
+        }
+
+        #derecha {
+            width: 205px;
+        }
+        #derecha form {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        #derecha input[type="text"]{
+            flex: 1;
+            min-width: 0;
+        }
+        #derecha input[type="image"] {
+            width: 35px;
+            height: 26px;
+            object-fit: contain;
+        }
+
+        input {
+            width: 100%;
+        }
+
+        .fila-form {
+            display: flex;
+            gap: 20px;
+        }
+
+        .columna-form {
+            width: 50%;
+        }
+
+        input[type='checkbox'] {
+            width: auto;
+            text-align: center;
+        }
+
+        input[type='submit'] {
+            width: auto;
+            border: none;
+            background-color: forestgreen;
+            color: white;
+            font-weight: bold;
+            font-size: 1.1rem;
+            padding: 6px 15px;
+        }
+
+        input[type='submit']:hover {
+            background-color: #29a629;
+            box-shadow: 0px 3px 4px grey;
+        }
+    </style>
 </head>
 
 <body>
@@ -35,14 +104,47 @@
         </header>
         <div id="fila">
             <div id="izquierda">
-                
+                <h2>XXXXXX</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptas, sapiente officia ad, saepe
+                    obcaecati alias eligendi aut odit mollitia eum minus laboriosam? Odio corrupti dolore voluptas
+                    nulla? Nostrum, dicta necessitatibus?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis perspiciatis molestias aspernatur! At
+                    facere unde provident odit asperiores exercitationem possimus molestiae aliquam! Velit harum
+                    accusamus atque ea, deserunt qui quo.</p><br>
+                <form action="http://www.cursos-diseño.es/mostrar.php">
+                    <div class="fila-form">
+                        <div class="columna-form">
+                            Nombre
+                            <input type="text" name="nombre">
+                        </div>
+                        <div class="columna-form">
+                            Apellido
+                            <input type="text" name="apellido">
+                        </div>
+                    </div>
+                    <div class="fila-form">
+                        <div class="columna-form">
+                            Email
+                            <input type="email" name="mail">
+                        </div>
+                        <div class="columna-form">
+                            Telefono
+                            <input type="text" name="telefono">
+                        </div>
+                    </div><br>
+                    <label><input required type="checkbox">Acepto los <a href="terminos.html">terminos y condiciones</a></label>
+                    <div id="boton"><input type="submit"></div>
+                </form>
             </div>
             <div id="derecha">
-                
-            </div>
+                <img src="pruebas/anuncio.gif">
+                <form action="http://google.es/search" method="get">
+                    <input type="text" name="q">
+                    <input type="image" src="search.png" alt="lupa">
+                </form>
 
+            </div>
         </div>
-    </div>
 </body>
 
 </html>

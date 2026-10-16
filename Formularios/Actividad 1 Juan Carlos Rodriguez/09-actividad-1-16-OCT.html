@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CasaViva</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe ui',
+                sans-serif;
+        }
+        #contenedor {
+            width: 1200px;
+            margin: auto;
+        }
+        header {
+            padding: 30px;
+            margin-bottom: 30px;
+            border-bottom: solid lightgrey;
+            text-align: center;
+        }
+        article {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        #datos {
+            border-top: solid lightgray;
+            margin-top: 30px;
+            display: flex;
+            gap: 2  0px;
+        }
+        #izquierda {
+            width: 765px;
+            padding: 30px;
+            color: rgb(0, 0, 131);
+        }
+        #derecha {
+            padding: 30px;  
+        }
+        #tablas {
+            color: grey;
+        }
+        #campos {
+            color: grey;
+            padding-left: 70px;
+            font-weight: normal;
+        }
+        .pequenio {
+        width: 100px;
+        }
+
+        .mediano {
+        width: 200px;
+        }
+
+        .grande {
+        width: 100%;
+        }
+        #titulo  {
+        margin-right: auto;
+        }
+        #enl {
+        color: solid lightgray;
+        }
+        input[type='submit'] {
+        border: none;
+        background-color: rgb(0, 0, 131);
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        padding: 6px 15px;
+        }
+        input[type='submit']:hover {
+            background-color: rgb(0, 0, 178);
+            box-shadow: 0px 3px 4px grey;
+        }
+        #boton {
+            text-align: center;
+        }
+        #final {
+            background: rgb(0, 0, 178);
+            margin-top: 60px;
+            color: white;
+            padding:  30px;
+        }
+        #titulos {
+            font-size: 30px;
+            color: rgb(0, 0, 178);
+        }
+    </style>
+</head>
+<body>
+    <div id="contenedor">
+        <header>
+            <img width="200px" height="180px" src="img/logo.png">
+        </header>
+            <article>
+                <div>HOME</div>
+                <div>CASAS</div>
+                <div>LIVING</div>
+                <div>SOLUCINES</div>
+                <div>CONTACTOS</div>
+                <div>SUSCRIPCIONES Y TIENDA ONLINE</div>
+            </article>
+        <div id="datos">
+            <div id="izquierda">
+            <form id="miform" action="http://www.cursos-diseno.es/mostrar.php">
+                <table id="tablas">
+                    <tr>
+                        <td id="titulos">Dato de suscripcion</td>
+                    </tr><br>
+                    <tr>
+                        <td>* Campos obligatorios</td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Nombre *</td>
+                        <td><input required type="text" name="nombre" size="50" class="grande"></td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Apellidos *</td>
+                        <td><input required type="text" name="apellidos" size="50" class="grande"></td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Direccion *</td>
+                        <td><input required type="text" name="direccion" placeholder="Calle, nº, piso..."size="50" class="grande"></td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Codigo postal *</td>
+                        <td><input required type="text" name="codigo" size="50" class="mediano"></td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Ciudad *</td>
+                        <td><input required type="text" name="ciudad" size="50" class="mediano"></td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Provincia *</td>
+                        <td><select name="provincia" id="provincia" class="pequenio" required>
+                            <option value="15">A Coruña</option>
+                            <option value="01">Álava</option>
+                            <option value="02">Albacete</option>
+                            <option value="03">Alicante</option>
+                            <option value="04">Almería</option>
+                            <option value="33">Asturias</option>
+                            <option value="05">Ávila</option>
+                            <option value="06">Badajoz</option>
+                            <option value="07">Baleares</option>
+                            <option value="08">Barcelona</option>
+                            <option value="09">Burgos</option>
+                            <option value="10">Cáceres</option>
+                            <option value="11">Cádiz</option>
+                            <option value="39">Cantabria</option>
+                            <option value="12">Castellón</option>
+                            <option value="51">Ceuta</option>
+                            <option value="13">Ciudad Real</option>
+                            <option value="14">Córdoba</option>
+                            <option value="16">Cuenca</option>
+                            <option value="17">Girona</option>
+                            <option value="18">Granada</option>
+                            <option value="19">Guadalajara</option>
+                            <option value="20">Gipuzkoa</option>
+                            <option value="21">Huelva</option>
+                            <option value="22">Huesca</option>
+                            <option value="23">Jaén</option>
+                            <option value="24">León</option>
+                            <option value="25">Lleida</option>
+                            <option value="27">Lugo</option>
+                            <option selected value="28">Madrid</option>
+                            <option value="29">Málaga</option>
+                            <option value="52">Melilla</option>
+                            <option value="30">Murcia</option>
+                            <option value="31">Navarra</option>
+                            <option value="32">Ourense</option>
+                            <option value="34">Palencia</option>
+                            <option value="35">Las Palmas</option>
+                            <option value="36">Pontevedra</option>
+                            <option value="26">La Rioja</option>
+                            <option value="37">Salamanca</option>
+                            <option value="38">Santa Cruz de Tenerife</option>
+                            <option value="40">Segovia</option>
+                            <option value="41">Sevilla</option>
+                            <option value="42">Soria</option>
+                            <option value="43">Tarragona</option>
+                            <option value="44">Teruel</option>
+                            <option value="45">Toledo</option>
+                            <option value="46">Valencia</option>
+                            <option value="47">Valladolid</option>
+                            <option value="48">Bizkaia</option>
+                            <option value="49">Zamora</option>
+                            <option value="50">Zaragoza</option>
+                        </select></td>
+                    </tr>
+                    <tr>
+                        <td id="titulo"> Telefono *</td>
+                        <td><input required type="text" name="telefono" placeholder="+34 123 456 789" size="50" class="mediano"></td>
+                    </tr>
+                    <tr>
+                        <td  id="titulos">Dato de usuario</td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Direccion de correo electronico *</td>
+                        <td><input required type="email" name="mail" size="50" class="grande"></td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Contraseña *</td>
+                        <td><input required type="password" name="contraseña" size="50" class="mediano"></td>
+                    </tr>
+                    <tr>
+                        <td id="titulo">Confirmacion de contraseña *</td>
+                        <td><input required type="password" name="confirmacion" size="50" class="mediano    "></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                    <td><label>
+                        <input required type="checkbox" name="acepto"> Acepto las <a style="color: gray;" href="">condiciones</a> *</label>
+                    </td>
+                </tr>
+                </table>
+            </form>
+            </div>
+            <div id="derecha">
+                <img width="400px" height="550px" src="img/revista.jpg">
+            </div>
+        </div>
+        <div id="boton"><input type="submit" value="Suscribirme" form="miform"></div>
+    </div>
+<footer id="final">
+            <article>
+                <div>Contacto</div>
+                <div>Condiciones generales</div>
+                <div>Condiciones y gastos de envio</div>
+                <div>Politica de privacidad</div>
+                <div>Informacion de contacto</div>
+            </article>
+</footer>
+</body>
+</html>

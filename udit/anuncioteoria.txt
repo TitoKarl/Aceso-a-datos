@@ -1,0 +1,40 @@
+1990 Tim Berner Lee http, navegador, HTLM
+
+1993 CSS
+
+1994 Rasmus Lerdof Personal Home Pagp (PHP)
+
+1997 HyperText Pre Processor
+
+2001 PHP Group, estándar, php.net
+
+2026 versión 8
+
+
+
+CARACTERISTICAS
+- Independiente del SO
+- Lenguaje de servidor WEB (Apache)
+- Invisible al navegador
+- Seguro que los lenguajes de Navegador
+- Lenguaje interpretado (no es complicado)
+- Muchas funciones predefinidas
+- Software libre (ASP de Microsoft), JSP (Java Server Page)
+- Mas utilizado 70%
+- Completamente documentado
+- Extensiones de comunicación con otros lenguajes: XML, SLQ, (API)
+- Comunicación con otros servicios: files smtq, pop3,
+
+
+USOS
+- No es un lenguaje de intercepción
+- Manejar datos
+- Procesar los datos enviados desde formularios
+- Aplicaciones dinámicas
+- Conexión con BBDD
+- Cookies y sessions
+- Gestionar archivos en el servidor
+- Enviar email
+- Muchas aplicaciones WEB
+
+short_open_tag

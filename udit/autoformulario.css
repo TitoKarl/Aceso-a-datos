@@ -1,0 +1,41 @@
+		* {
+			box-sizing: border-box;
+		}
+		body {
+			font-family: 'Segoe UI', sans-serif;
+			max-width: 800px;
+			margin: 40px auto;
+			padding: 20px;
+			background: #fafafa;
+		}
+		h1, h2 {
+			text-align: center;
+		}
+		form {
+			background: #eee;
+			padding: 30px;
+			border: #ddd solid 1px;
+			max-width: 500px;
+			margin: auto;
+		}
+		input, textarea, select {
+			width: 100%;
+			font: 1rem 'Segoe UI', sans-serif;
+			color: #117;
+			margin-bottom: 20px;
+			padding: 3px 8px;
+		}
+		input[type='radio'],input[type='checkbox'], input[type='file']  {
+			width: auto;			
+		}
+		input[type='submit'] {
+			font-weight: bold;
+			width: auto;
+			padding: 5px 15px;
+			background: #bbb;
+			border: none;
+			margin: 0;
+		}
+		input[type='submit']:hover {
+			box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+		}

@@ -19,6 +19,8 @@
                 <input type='number' name='altura' value="160" required> <br>
                 Peso
                 <input type='number' name='peso' value="65" required> <br>
+                <label>Enfermedad que afecta al peso
+                <input type='checkbox' name='enfermedad' value="si" required></label> <br>
                 <input type='submit'>
             </form>
    <br>
@@ -28,12 +30,14 @@
             $altura_m = $_POST['altura'] - 100;
             $altura_h = $_POST['altura'] - 110;
             $peso = $_POST['peso'];
+            $enfermedad = $_POST['enfermedad'];
 
             if ( $genero == "mujer" && $altura_m <= 70 ){
                 echo "Siendo mujer, tu peso es ideal"; 
             } else if ($genero == "mujer" && $altura_m >= 70){
                 echo "Para estar mejor tendrias que bajar $altura_m"; 
-            }
+            } else if ($genero == "mujer" && $altura_m >= 70 && $enfermedad == "si" )
+                echo "Debido a tu enfermedad no puedes bajar de peso"; 
             if ( $genero == "hombre" && $altura_m <= 80 ){
                 echo "Siendo hombre, tu peso es ideal"; 
             } else if ($genero == "hombre" && $altura_m >= 80) {
